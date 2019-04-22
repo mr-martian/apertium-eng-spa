@@ -15,17 +15,9 @@
       <program name="lrx-proc -m">
         <file name="spa-eng.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.spa-eng.t2x"/>
-        <file name="spa-eng.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.spa-eng.t3x"/>
-        <file name="spa-eng.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.spa-eng.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="spa-eng.autogen.bin"/>
@@ -50,17 +42,9 @@
       <program name="lrx-proc -m">
         <file name="spa-eng.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.spa-eng.t2x"/>
-        <file name="spa-eng.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.spa-eng.t3x"/>
-        <file name="spa-eng.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.spa-eng.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="spa-eng_US.autogen.bin"/>
@@ -137,7 +121,7 @@
     </pipeline>
   </mode>
 
-  <mode name="spa-eng-chunker">
+  <mode name="spa-eng-transfer">
     <pipeline>
       <program name="lt-proc">
         <file name="spa-eng.automorf.bin"/>
@@ -152,65 +136,9 @@
       <program name="lrx-proc -m">
         <file name="spa-eng.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b -t">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-  
-  <mode name="spa-eng-interchunk">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="spa-eng.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="spa-eng.prob"/>
-      </program>
-      <program name="apertium-pretransfer"/>
-      <program name="lt-proc -b">
-        <file name="spa-eng.autobil.bin"/>
-      </program>
-      <program name="lrx-proc -m">
-        <file name="spa-eng.autolex.bin"/>
-      </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk -t">
-        <file name="apertium-eng-spa.spa-eng.t2x"/>
-        <file name="spa-eng.t2x.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="spa-eng-postchunk">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="spa-eng.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="spa-eng.prob"/>
-      </program>
-      <program name="apertium-pretransfer"/>
-      <program name="lt-proc -b">
-        <file name="spa-eng.autobil.bin"/>
-      </program>
-      <program name="lrx-proc -m">
-        <file name="spa-eng.autolex.bin"/>
-      </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.spa-eng.t2x"/>
-        <file name="spa-eng.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.spa-eng.t3x"/>
-        <file name="spa-eng.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.spa-eng.rtx"/>
       </program>
     </pipeline>
   </mode>
@@ -230,17 +158,9 @@
       <program name="lrx-proc -m">
         <file name="spa-eng.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.spa-eng.t2x"/>
-        <file name="spa-eng.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.spa-eng.t3x"/>
-        <file name="spa-eng.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.spa-eng.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="spa-eng.autogen.bin"/>
@@ -262,17 +182,9 @@
       <program name="lrx-proc -m">
         <file name="spa-eng.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.spa-eng.t1x"/>
-        <file name="spa-eng.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.spa-eng.t2x"/>
-        <file name="spa-eng.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.spa-eng.t3x"/>
-        <file name="spa-eng.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.spa-eng.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="spa-eng_US.autogen.bin"/>
@@ -300,17 +212,9 @@
       <program name="lrx-proc -m">
         <file name="eng-spa.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.eng-spa.t1x"/>
-        <file name="eng-spa.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.eng-spa.t2x"/>
-        <file name="eng-spa.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.eng-spa.t3x"/>
-        <file name="eng-spa.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.eng-spa.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="eng-spa.autogen.bin"/>
@@ -410,7 +314,7 @@
     </pipeline>
   </mode>
 
-  <mode name="eng-spa-chunker">
+  <mode name="eng-spa-transfer">
     <pipeline>
       <program name="lt-proc">
         <file name="eng-spa.automorf.bin"/>
@@ -429,77 +333,13 @@
       <program name="lrx-proc -m">
         <file name="eng-spa.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b -t">
-        <file name="apertium-eng-spa.eng-spa.t1x"/>
-        <file name="eng-spa.t1x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.eng-spa.rtx"/>
       </program>
     </pipeline>
   </mode>
   
-  <mode name="eng-spa-interchunk">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="eng-spa.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="eng-spa.prob"/>
-      </program>
-      <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer -n">
-        <file name="apertium-eng-spa.eng-spa.genitive.t1x"/>
-        <file name="eng-spa.genitive.bin"/>
-      </program>
-      <program name="lt-proc -b">
-        <file name="eng-spa.autobil.bin"/>
-      </program>
-      <program name="lrx-proc -m">
-        <file name="eng-spa.autolex.bin"/>
-      </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.eng-spa.t1x"/>
-        <file name="eng-spa.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk -t">
-        <file name="apertium-eng-spa.eng-spa.t2x"/>
-        <file name="eng-spa.t2x.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="eng-spa-postchunk">
-    <pipeline>
-      <program name="lt-proc">
-        <file name="eng-spa.automorf.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="eng-spa.prob"/>
-      </program>
-      <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer -n">
-        <file name="apertium-eng-spa.eng-spa.genitive.t1x"/>
-        <file name="eng-spa.genitive.bin"/>
-      </program>
-      <program name="lt-proc -b">
-        <file name="eng-spa.autobil.bin"/>
-      </program>
-      <program name="lrx-proc -m">
-        <file name="eng-spa.autolex.bin"/>
-      </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.eng-spa.t1x"/>
-        <file name="eng-spa.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.eng-spa.t2x"/>
-        <file name="eng-spa.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.eng-spa.t3x"/>
-        <file name="eng-spa.t3x.bin"/>
-      </program>
-    </pipeline>
-  </mode>
-
   <mode name="eng-spa-generador">
     <pipeline>
       <program name="lt-proc">
@@ -519,17 +359,9 @@
       <program name="lrx-proc -m">
         <file name="eng-spa.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
-        <file name="apertium-eng-spa.eng-spa.t1x"/>
-        <file name="eng-spa.t1x.bin"/>
-      </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-eng-spa.eng-spa.t2x"/>
-        <file name="eng-spa.t2x.bin"/>
-      </program>
-      <program name="apertium-postchunk">
-        <file name="apertium-eng-spa.eng-spa.t3x"/>
-        <file name="eng-spa.t3x.bin"/>
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-eng-spa.eng-spa.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="eng-spa.autogen.bin"/>
